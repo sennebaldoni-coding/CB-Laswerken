@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realisaties | CB-Laswerken</title>
+
+    <link rel="icon" type="image/png" href="../../img/1mainimages/cb-laswerkenlogo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="realisaties.css">
+
+    <link rel="stylesheet" href="../../modules/cookie-consent/cookie-consent.css">
+    <script defer src="../../modules/cookie-consent/cookie-consent.js"></script>
+
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+
+<header id="main-header">
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="../../img/1mainimages/cb-laswerkenlogo.png" alt="CB-Laswerken Logo" class="logo-img">
+                <strong>CB-Laswerken</strong>
+            </div>
+        </div>
+
+        <ul class="nav-links" id="nav-links">
+            <li class="mobile-only"><div class="menu-close" id="menu-close"><i class="fa-solid fa-xmark"></i></div></li>
+            <li><a href="../../index.html" class="nav-item">Home</a></li>
+            <li><a href="../overons/over-ons.html" class="nav-item">Over ons</a></li>
+            <li><a href="realisaties.html" class="nav-item">Realisaties</a></li>
+            <li><a href="../contact/contact.html" class="nav-item">Contact</a></li>
+
+            <li class="mobile-only">
+                <div class="mobile-footer">
+                    <p>Volg ons</p>
+                    <div class="mobile-social-icons">
+                        <a href="https://www.facebook.com/Poorten.balustrades.trappen.constructies/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/baldoni_christof?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="nav-icons">
+                <a href="mailto:info@cb-laswerken.be"><i class="fa-regular fa-envelope"></i></a>
+                <a href="tel:0476795615"><i class="fa-solid fa-phone"></i></a>
+                <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Hero Section -->
+    <div class="hero-wrapper secondary-hero">
+        <section class="hero-image-box">
+            <img src="../../img/1mainimages/cb-laswerken-5.JPG" alt="Realisaties CB-Laswerken" class="hero-img">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>ONZE <span class="logo-accent">REALISATIES</span></h1>
+                <p>Ontdek ons vakmanschap in beeld</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Intro Section -->
+    <section class="intro-section">
+        <div class="intro-container">
+            <span class="sub-title">Onze Portfolio</span>
+            <h2>Trots op elk project</h2>
+            <p>Elke realisatie vertelt een verhaal van vakmanschap, precisie en passie voor metaalbewerking. Van stalen deuren tot complexe metaalconstructies – bekijk onze projecten en laat u inspireren door de mogelijkheden.</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <span class="sub-title">Filter op Categorie</span>
+            <h2>Bekijk specifieke projecten</h2>
+            <p class="filter-description">Klik op een categorie om de projecten te bekijken</p>
+            
+            <!-- Loading Indicator -->
+            <div class="loading-indicator" id="loading-indicator">
+                <div class="loading-bar">
+                    <div class="loading-progress" id="loading-progress"></div>
+                </div>
+                <p class="loading-text" id="loading-text">Projecten laden... <span id="loaded-count">0</span> foto's gevonden</p>
+            </div>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fa-solid fa-border-all"></i>
+                    <span>Alle projecten</span>
+                </button>
+                <button class="filter-btn" data-filter="stalendeuren">
+                    <i class="fa-solid fa-door-open"></i>
+                    <span>Stalen Deuren</span>
+                </button>
+                <button class="filter-btn" data-filter="trappen">
+                    <i class="fa-solid fa-stairs"></i>
+                    <span>Trappen & Balustrades</span>
+                </button>
+                <button class="filter-btn" data-filter="poorten">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <span>Poorten</span>
+                </button>
+                <button class="filter-btn" data-filter="deuren">
+                    <i class="fa-solid fa-door-closed"></i>
+                    <span>Deuren</span>
+                </button>
+                <button class="filter-btn" data-filter="metaalconstructies">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <span>Metaalconstructies</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery-section">
+        <div class="gallery-container" id="gallery-container">
+            <div class="loading-spinner">
+                <i class="fa-solid fa-spinner fa-spin"></i>
+                <p>Projecten laden...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Geïnspireerd door onze projecten?</h2>
+                <p>Laat ons uw ideeën tot leven brengen met professioneel metaalwerk</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="tel:0476795615" class="btn-cta phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>0476/79.56.15</span>
+                </a>
+                <a href="../contact/contact.html" class="btn-cta email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Vraag offerte aan</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Lightbox Modal -->
+<div class="lightbox-modal" id="lightbox-modal">
+    <button class="lightbox-close" id="lightbox-close">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button class="lightbox-prev" id="lightbox-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-next" id="lightbox-next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <div class="lightbox-content">
+        <img src="" alt="Project foto" id="lightbox-img">
+        <div class="lightbox-info">
+            <p class="lightbox-category" id="lightbox-category"></p>
+            <p class="lightbox-counter" id="lightbox-counter"></p>
+        </div>
+    </div>
+</div>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <div class="logo">
+                <img src="../../img/1mainimages/cb-laswerkenlogo.png" alt="CB-Laswerken Logo Footer" class="logo-img">
+                <strong>CB-Laswerken</strong>
+            </div>
+            <p>Uw partner voor kwalitatief laswerk en metaalconstructies op maat.</p>
+            <div class="footer-social-icons">
+                <a href="https://www.facebook.com/Poorten.balustrades.trappen.constructies/"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/baldoni_christof?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Navigatie</h4>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../overons/over-ons.html">Over ons</a></li>
+                <li><a href="realisaties.html">Realisaties</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact-info">
+            <h4>Contact</h4>
+            <ul class="contact-list">
+                <li><i class="fa-solid fa-location-dot"></i> <span>Neremveld 8A, 3840 Tongeren-Borgloon</span></li>
+                <li><i class="fa-solid fa-phone"></i> <span>0476/79.56.15</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span>info@cb-laswerken.be</span></li>
+                <li><i class="fa-solid fa-file-invoice"></i> <span>BTW BE 0847.826.718</span></li>
+                <li><i class="fa-regular fa-clock"></i> <span>maandag - vrijdag: 9:00 - 18:00</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-content">
+            <p>&copy; 2026 Senne Baldoni - Alle rechten voorbehouden</p>
+            <div class="footer-legal-links">
+                <a href="../privacy/privacy.html">Privacybeleid</a>
+                <span class="separator">|</span>
+                <a href="../cookies/cookies.html">Cookiebeleid</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- ====================================
+     COOKIE CONSENT BANNER & MODAL
+     Kopieer deze code naar ELKE pagina
+     VOOR de sluitende </body> tag
+     ==================================== -->
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <div>
+                <h3>🍪 Cookies op CB-Laswerken</h3>
+                <p>We gebruiken cookies om uw ervaring te verbeteren en Google Maps te laten werken. Essentiële cookies zijn altijd actief. U kunt optionele cookies accepteren of weigeren.</p>
+            </div>
+        </div>
+        <div class="cookie-banner-actions">
+            <button class="btn-cookie-settings" id="btn-cookie-settings">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Instellingen</span>
+            </button>
+            <button class="btn-cookie-accept" id="btn-cookie-accept">
+                <i class="fa-solid fa-check"></i>
+                <span>Alles Accepteren</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div class="cookie-modal" id="cookie-modal">
+    <div class="cookie-modal-content">
+        <div class="cookie-modal-header">
+            <h2>Cookie Instellingen</h2>
+            <button class="cookie-modal-close" id="cookie-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="cookie-modal-body">
+            <p>Beheer uw cookie voorkeuren. Essentiële cookies zijn altijd actief en kunnen niet worden uitgeschakeld.</p>
+
+            <div class="cookie-toggle-group">
+                <!-- Essentiële Cookies -->
+                <div class="cookie-toggle-item">
+                    <div class="cookie-toggle-info">
+                        <h4>Essentiële Cookies</h4>
+                        <p>Noodzakelijk voor het functioneren van de website (sessie, taalvoorkeur)</p>
+                    </div>
+                    <div class="toggle-switch disabled">
+                        <input type="checkbox" id="essential-cookies" checked disabled>
+                        <label for="essential-cookies"></label>
+                        <span class="toggle-label">Altijd Actief</span>
+                    </div>
+                </div>
+
+                <!-- Functionele Cookies (Google Maps) -->
+                <div class="cookie-toggle-item">
+                    <div class="cookie-toggle-info">
+                        <h4>Functionele Cookies</h4>
+                        <p>Voor extra functionaliteit zoals Google Maps en contactformulieren</p>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="functional-cookies">
+                        <label for="functional-cookies"></label>
+                    </div>
+                </div>
+
+                <!-- Analytische Cookies (Google Analytics) -->
+                <div class="cookie-toggle-item">
+                    <div class="cookie-toggle-info">
+                        <h4>Analytische Cookies</h4>
+                        <p>Om te begrijpen hoe bezoekers de website gebruiken (Google Analytics)</p>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="analytics-cookies">
+                        <label for="analytics-cookies"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-modal-footer">
+            <button class="btn-cookie-save" id="btn-cookie-save">
+                <i class="fa-solid fa-check"></i>
+                <span>Voorkeuren Opslaan</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

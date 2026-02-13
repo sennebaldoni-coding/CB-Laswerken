@@ -1,0 +1,88 @@
+<!-- ====================================
+     COOKIE CONSENT BANNER & MODAL
+     Kopieer deze code naar ELKE pagina
+     VOOR de sluitende </body> tag
+     ==================================== -->
+
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookie-banner">
+    <div class="cookie-banner-content">
+        <div class="cookie-banner-text">
+            <i class="fa-solid fa-cookie-bite"></i>
+            <div>
+                <h3>🍪 Cookies op CB-Laswerken</h3>
+                <p>We gebruiken cookies om uw ervaring te verbeteren en Google Maps te laten werken. Essentiële cookies zijn altijd actief. U kunt optionele cookies accepteren of weigeren.</p>
+            </div>
+        </div>
+        <div class="cookie-banner-actions">
+            <button class="btn-cookie-settings" id="btn-cookie-settings">
+                <i class="fa-solid fa-sliders"></i>
+                <span>Instellingen</span>
+            </button>
+            <button class="btn-cookie-accept" id="btn-cookie-accept">
+                <i class="fa-solid fa-check"></i>
+                <span>Alles Accepteren</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Cookie Settings Modal -->
+<div class="cookie-modal" id="cookie-modal">
+    <div class="cookie-modal-content">
+        <div class="cookie-modal-header">
+            <h2>Cookie Instellingen</h2>
+            <button class="cookie-modal-close" id="cookie-modal-close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="cookie-modal-body">
+            <p>Beheer uw cookie voorkeuren. Essentiële cookies zijn altijd actief en kunnen niet worden uitgeschakeld.</p>
+            
+            <div class="cookie-toggle-group">
+                <!-- Essentiële Cookies -->
+                <div class="cookie-toggle-item">
+                    <div class="cookie-toggle-info">
+                        <h4>Essentiële Cookies</h4>
+                        <p>Noodzakelijk voor het functioneren van de website (sessie, taalvoorkeur)</p>
+                    </div>
+                    <div class="toggle-switch disabled">
+                        <input type="checkbox" id="essential-cookies" checked disabled>
+                        <label for="essential-cookies"></label>
+                        <span class="toggle-label">Altijd Actief</span>
+                    </div>
+                </div>
+
+                <!-- Functionele Cookies (Google Maps) -->
+                <div class="cookie-toggle-item">
+                    <div class="cookie-toggle-info">
+                        <h4>Functionele Cookies</h4>
+                        <p>Voor extra functionaliteit zoals Google Maps en contactformulieren</p>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="functional-cookies">
+                        <label for="functional-cookies"></label>
+                    </div>
+                </div>
+
+                <!-- Analytische Cookies (Google Analytics) -->
+                <div class="cookie-toggle-item">
+                    <div class="cookie-toggle-info">
+                        <h4>Analytische Cookies</h4>
+                        <p>Om te begrijpen hoe bezoekers de website gebruiken (Google Analytics)</p>
+                    </div>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="analytics-cookies">
+                        <label for="analytics-cookies"></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cookie-modal-footer">
+            <button class="btn-cookie-save" id="btn-cookie-save">
+                <i class="fa-solid fa-check"></i>
+                <span>Voorkeuren Opslaan</span>
+            </button>
+        </div>
+    </div>
+</div>
