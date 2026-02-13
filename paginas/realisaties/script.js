@@ -49,19 +49,18 @@ const projectData = {
         'img21.jpeg', 'img22.jpeg', 'img23.jpeg', 'img24.jpeg', 'img25.jpeg',
         'img26.jpeg', 'img27.jpeg', 'img28.jpeg', 'img29.jpeg', 'img30.jpeg',
         'img31.jpeg', 'img32.jpeg', 'img33.jpeg', 'img34.jpeg', 'img35.jpeg',
-        'img36.jpeg', 'img37.jpeg'
+        'img36.jpeg',
     ],
     balustrades: [
         // BALUSTRADES (deze worden SAMEN MET TRAPPEN getoond)
         'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpeg',
         'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'img10.jpeg',
-        'img55.jpeg', 'img12.jpeg'
+        'img55.jpeg',
     ],
     poorten: [
         'img1.jpg', 'img2.jpg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg',
         'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'img10.jpeg',
         'img55.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
-        'img16.jpeg'
     ],
     deuren: [
         'img1.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg',
