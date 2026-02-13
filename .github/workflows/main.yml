@@ -3,7 +3,7 @@ name: Deploy Website to DirectAdmin
 on:
   push:
     branches:
-      - main  # Verander dit naar 'master' als je branch zo heet
+      - main
 
 jobs:
   deploy:
@@ -18,4 +18,10 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.REMOTE_PATH }}/
+          server-dir: ${{ secrets.REMOTE_PATH }}
+          force: true
+          # Optioneel: mappen die je NIET wilt uploaden (zoals je git-configuratie)
+          exclude: |
+            **/.git*
+            **/.idea*
+            **/node_modules*
