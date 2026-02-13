@@ -30,7 +30,7 @@ const projectData = {
     stalendeuren: [
         'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
         'img6.jpg', 'img7.jpg', 'img8.jpg', 'img9.jpeg', 'img10.jpeg',
-        'img11.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
+        'img55.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
         'img16.jpeg', 'img17.jpeg', 'img18.jpeg', 'img19.jpeg', 'img20.jpeg',
         'img21.jpeg', 'img22.jpeg', 'img23.jpeg', 'img24.jpeg', 'img25.jpeg',
         'img26.jpeg', 'img27.jpeg', 'img28.jpeg', 'img29.jpeg', 'img30.jpeg',
@@ -38,13 +38,13 @@ const projectData = {
         'img36.jpeg', 'img37.jpeg', 'img38.jpeg', 'img39.JPG', 'img40.jpeg',
         'img41.jpeg', 'img42.JPG', 'img43.JPG', 'img44.jpeg', 'img45.jpeg',
         'img46.jpeg', 'img47.jpeg', 'img48.jpeg', 'img49.JPG', 'img50.jpeg',
-        'img51.jpeg', 'img52.jpeg', 'img53.JPG', 'img54.JPG'
+        'img51.jpeg', 'img52.jpeg', 'img53.JPG', 'img54.JPG', 'img55.jpeg',
     ],
     trappen: [
         // TRAPPEN
         'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
         'img6.jpg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'img10.jpeg',
-        'img11.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
+        'img55.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
         'img16.jpeg', 'img17.jpeg', 'img18.jpeg', 'img19.jpeg', 'img20.jpeg',
         'img21.jpeg', 'img22.jpeg', 'img23.jpeg', 'img24.jpeg', 'img25.jpeg',
         'img26.jpeg', 'img27.jpeg', 'img28.jpeg', 'img29.jpeg', 'img30.jpeg',
@@ -55,12 +55,12 @@ const projectData = {
         // BALUSTRADES (deze worden SAMEN MET TRAPPEN getoond)
         'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpeg',
         'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'img10.jpeg',
-        'img11.jpeg', 'img12.jpeg'
+        'img55.jpeg', 'img12.jpeg'
     ],
     poorten: [
         'img1.jpg', 'img2.jpg', 'img3.jpeg', 'img4.jpeg', 'img5.jpeg',
         'img6.jpeg', 'img7.jpeg', 'img8.jpeg', 'img9.jpeg', 'img10.jpeg',
-        'img11.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
+        'img55.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
         'img16.jpeg'
     ],
     deuren: [
@@ -72,7 +72,7 @@ const projectData = {
     metaalconstructies: [
         'img1.jpg', 'img2.jpg', 'img3.jpg', 'img4.jpg', 'img5.jpg',
         'img6.jpeg', 'img7.jpg', 'img8.jpg', 'img9.jpg', 'img10.jpeg',
-        'img11.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
+        'img55.jpeg', 'img12.jpeg', 'img13.jpeg', 'img14.jpeg', 'img15.jpeg',
         'img16.jpeg', 'img17.jpeg', 'img18.jpeg', 'img19.jpeg', 'img20.jpeg',
         'img21.jpeg', 'img22.jpeg', 'img23.jpeg', 'img24.jpeg', 'img25.jpeg',
         'img26.JPG', 'img27.jpeg', 'img28.jpeg'
