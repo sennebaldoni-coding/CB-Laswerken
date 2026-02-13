@@ -440,3 +440,23 @@ scrollTopBtn.addEventListener('click', () => {
         behavior: 'smooth'
     });
 });
+// ====================================
+// SMOOTH SCROLL TO HASH ON PAGE LOAD
+// ====================================
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        const hash = window.location.hash;
+        if (hash) {
+            const targetElement = document.querySelector(hash);
+            if (targetElement) {
+                const headerHeight = 100;
+                const targetPosition = targetElement.offsetTop - headerHeight;
+
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        }
+    }, 100);
+});
